@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const routes = require('./routes/usarioCliente');
 const usuarioClienteRoute = require('./routes/usarioCliente');
 const errorController = require('./controllers/error')
 
