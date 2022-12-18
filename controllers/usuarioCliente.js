@@ -12,6 +12,7 @@ exports.getAllUsuarioCliente = async(req,res,next) => {
     }
 };
 
+
 exports.postUsuarioCliente = async(req,res,next) => {
     try {
         const postResponse = await usuarioCliente.post(req.body.nombre,req.body.apellido,req.body.cedula,req.body.telefono,req.body.direccion,req.body.correo,req.body.contrasenia,req.body.usuario);
@@ -46,7 +47,7 @@ exports.deleteUsuarioCliente = async(req,res,next) => {
         if(!error.statusCode){
             error.statusCode = 500;
         }
-        next(error);
+        next(error); 
     }
 };
 
